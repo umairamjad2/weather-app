@@ -109,7 +109,7 @@ body{
       display: flex;
       align-items: center;
       width: 50%;
-      /* transform: translateY(-100%); */
+      
 }
 
 .humidity.active , .wind.active{
@@ -133,7 +133,7 @@ body{
 }
 .weather-detail .humidity {
       padding-left: 20px;
-      justify-content: flex-start
+      justify-content: flex-start;
 }
 
 .weather-detail .wind {
@@ -174,4 +174,64 @@ body{
 .not-found p{
       font-size: 22px;
       font-weight: 500;
+}
+
+@media (max-width: 480px) {
+      .weather-box .temperature {
+            font-size: 64px;
+            margin-top: 10px;
+      }
+      .description {
+            margin-top: 10px;
+            font-size: 20px;
+      }
+
+      .humidity,
+      .wind {
+            justify-content: center;
+            width: 100%;
+      }
+      .weather-detail .humidity {
+      padding-left: 5px;
+      justify-content: flex-start;
+      }
+
+      .weather-detail .wind {
+            padding-right: 5px;
+            justify-content: flex-end;
+      }
+
+      .weather-detail i {
+            font-size: 35px;
+      }
+
+      .weather-detail span {
+            font-size: 20px;
+      }
+
+      .search-box input {
+            font-size: 15px;
+      }
+      .search-box input::placeholder {
+            font-size: 15px;
+      }
+
+      .search-box button ,.search-box i {
+            font-size: 22px;
+      }
+
+      .container{
+            width: 300px;
+      }
+      .not-found p {
+            font-size: 18px;     
+      }
+      .weather-detail.active{
+            padding: 0 10px;
+      }
+      .not-found{
+            margin-top: 150px;
+      }
+      
+
 }
